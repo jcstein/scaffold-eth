@@ -16,6 +16,6 @@ yarn chain
 > in a second terminal window, start your 📱 frontend:
 
 ```bash
-cd scaffold-eth
+cd bg-hack
 yarn start
 ```
