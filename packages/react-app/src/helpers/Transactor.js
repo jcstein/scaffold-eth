@@ -31,7 +31,7 @@ export default function Transactor(provider, gasPrice, etherscan) {
         etherscanNetwork = network.name + ".";
       }
 
-      let etherscanTxUrl = "https://" + etherscanNetwork + "etherscan.io/tx/";
+      let etherscanTxUrl = "https://explorer.tarotestnet.com/tx/";
       if (network.chainId === 100) {
         etherscanTxUrl = "https://blockscout.com/poa/xdai/tx/";
       }

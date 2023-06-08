@@ -374,7 +374,7 @@ export const NETWORKS = {
     blockExplorer: "https://mumbai-explorer.matic.today/",
   },
   taro: {
-    name: "Taro Testnet",
+    name: "Taro 🧋",
     color: "#7B2BF9",
     chainId: 1582,
     price: 1,

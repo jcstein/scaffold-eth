@@ -430,6 +430,9 @@ function App(props) {
             */}
 
             <div style={{ maxWidth: 820, margin: "auto", marginTop: 32, paddingBottom: 32 }}>
+              <h1>🎨 Create your own loogie</h1>
+              <h3>These loogies just weren't having it today 🤷‍♀️</h3>
+              <br />
               {isSigner?(
                 <Button type={"primary"} onClick={()=>{
                   tx( writeContracts.YourCollectible.mintItem() )
@@ -496,12 +499,16 @@ function App(props) {
                 }}
               />
             </div>
-            <div style={{ maxWidth: 820, margin: "auto", marginTop: 32, paddingBottom: 256 }}>
+            <div style={{ maxWidth: 820, margin: "auto", marginTop: 32 }}>
 
               🛠 built with <a href="https://github.com/austintgriffith/scaffold-eth" target="_blank">🏗 scaffold-eth</a>
 
               🍴 <a href="https://github.com/austintgriffith/scaffold-eth" target="_blank">Fork this repo</a> and build a cool SVG NFT!
 
+            </div>
+            <div style={{ maxWidth: 820, margin: "auto", marginTop: 32, paddingBottom: 256 }}>
+              <h1></h1>
+              <p>Inspired by <a href="https://optimistic.loogies.io" target="_blank">Optimistic Loogies</a></p>
             </div>
           </Route>
           <Route path="/debug">
