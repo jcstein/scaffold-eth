@@ -381,6 +381,6 @@ export const NETWORKS = {
     gasPrice: 1000000000,
     rpcUrl: "https://taro-testnet.calderachain.xyz/http",
     faucet: "https://tarotestnet.com",
-    blockExplorer: "https://explorer.testnet.com",
+    blockExplorer: "https://explorer.tarotestnet.com/",
   },
 };
