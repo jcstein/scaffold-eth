@@ -373,4 +373,14 @@ export const NETWORKS = {
     faucet: "https://faucet.matic.network/",
     blockExplorer: "https://mumbai-explorer.matic.today/",
   },
+  taro: {
+    name: "Taro Testnet",
+    color: "#FF7A00",
+    chainId: 1582,
+    price: 1,
+    gasPrice: 1000000000,
+    rpcUrl: "https://taro-testnet.calderachain.xyz/http",
+    faucet: "https://tarotestnet.com",
+    blockExplorer: "https://explorer.testnet.com",
+  },
 };

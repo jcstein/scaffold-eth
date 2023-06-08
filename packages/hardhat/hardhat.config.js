@@ -21,7 +21,7 @@ const { isAddress, getAddress, formatUnits, parseUnits } = utils;
 //
 // Select the network you want to deploy to here:
 //
-const defaultNetwork = "localhost";
+const defaultNetwork = "taro";
 
 function mnemonic() {
   try {
@@ -91,6 +91,13 @@ module.exports = {
     },
     matic: {
       url: 'https://rpc-mainnet.maticvigil.com/',
+      gasPrice: 1000000000,
+      accounts: {
+        mnemonic: mnemonic(),
+      },
+    },
+    taro: {
+      url: 'https://taro-testnet.calderachain.xyz/http',
       gasPrice: 1000000000,
       accounts: {
         mnemonic: mnemonic(),

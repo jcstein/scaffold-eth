@@ -28,7 +28,7 @@ contract YourCollectible is ERC721, Ownable {
   mapping (uint256 => bytes3) public color;
   mapping (uint256 => uint256) public chubbiness;
 
-  uint256 mintDeadline = block.timestamp + 24 hours;
+  uint256 mintDeadline = block.timestamp + 72 hours;
 
   function mintItem()
       public
@@ -95,22 +95,22 @@ contract YourCollectible is ERC721, Ownable {
   }
 
   // Visibility is `public` to enable it being called by other contracts for composition.
-  function renderTokenById(uint256 id) public view returns (string memory) {
+function renderTokenById(uint256 id) public view returns (string memory) {
     string memory render = string(abi.encodePacked(
-      '<g id="eye1">',
-          '<ellipse stroke-width="3" ry="29.5" rx="29.5" id="svg_1" cy="154.5" cx="181.5" stroke="#000" fill="#fff"/>',
-          '<ellipse ry="3.5" rx="2.5" id="svg_3" cy="154.5" cx="173.5" stroke-width="3" stroke="#000" fill="#000000"/>',
+        '<g id="eye1">',
+        '<ellipse stroke-width="3" ry="29.5" rx="29.5" id="svg_1" cy="154.5" cx="181.5" stroke="#000" fill="#fff"/>',
+        '<ellipse ry="3.5" rx="2.5" id="svg_3" cy="154.5" cx="173.5" stroke-width="3" stroke="#000" fill="#800080"/>', // made this eye dot purple
         '</g>',
         '<g id="head">',
-          '<ellipse fill="#',
-          color[id].toColor(),
-          '" stroke-width="3" cx="204.5" cy="211.80065" id="svg_5" rx="',
-          chubbiness[id].toString(),
-          '" ry="51.80065" stroke="#000"/>',
+        '<ellipse fill="#',
+        color[id].toColor(),
+        '" stroke-width="3" cx="204.5" cy="211.80065" id="svg_5" rx="',
+        chubbiness[id].toString(),
+        '" ry="51.80065" stroke="#000"/>',
         '</g>',
         '<g id="eye2">',
-          '<ellipse stroke-width="3" ry="29.5" rx="29.5" id="svg_2" cy="168.5" cx="209.5" stroke="#000" fill="#fff"/>',
-          '<ellipse ry="3.5" rx="3" id="svg_4" cy="169.5" cx="208" stroke-width="3" fill="#000000" stroke="#000"/>',
+        '<ellipse stroke-width="3" ry="29.5" rx="29.5" id="svg_2" cy="168.5" cx="209.5" stroke="#000" fill="#fff"/>',
+        '<ellipse ry="3.5" rx="3" id="svg_4" cy="169.5" cx="208" stroke-width="3" fill="#800080" stroke="#800080"/>', // made this eye dot purple
         '</g>'
       ));
 
