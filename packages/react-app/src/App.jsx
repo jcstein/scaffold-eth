@@ -507,8 +507,8 @@ function App(props) {
 
             </div>
             <div style={{ maxWidth: 820, margin: "auto", marginTop: 32, paddingBottom: 256 }}>
-              <h1></h1>
               <p>Inspired by <a href="https://optimistic.loogies.io" target="_blank">Optimistic Loogies</a></p>
+              <p>If you run into a bug, please <a href="https://github.com/jcstein/loogies/issues" target="_blank">submit an issue on GitHub</a>.</p>
             </div>
           </Route>
           <Route path="/debug">
