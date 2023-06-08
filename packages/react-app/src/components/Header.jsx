@@ -7,8 +7,8 @@ export default function Header() {
   return (
     <a href="/">
       <PageHeader
-        title="🟣 Celoptimistic Loogies"
-        subTitle=""
+        title="😞 Pessimistic Loogies"
+        subTitle="A generative SVG collection for haters."
         style={{ cursor: "pointer" }}
       />
     </a>

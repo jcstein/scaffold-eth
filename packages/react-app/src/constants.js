@@ -375,7 +375,7 @@ export const NETWORKS = {
   },
   taro: {
     name: "Taro Testnet",
-    color: "#FF7A00",
+    color: "#7B2BF9",
     chainId: 1582,
     price: 1,
     gasPrice: 1000000000,
